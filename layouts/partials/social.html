@@ -4,6 +4,11 @@
       <li><a href="https://github.com/{{ . }}"><i class="fa fa-github"></i></a></li>
     {{ end }}
 
+    {{ with .Site.Params.Social.Gitlab }}
+      <li><a href="https://gitlab.com/{{ . }}"><i class="fa fa-gitlab"></i></a></li>
+    {{ end }}
+
+
     {{ with .Site.Params.Social.Email }}
       <li><a href="mailto:{{ . }}"><i class="fa fa-envelope"></i></a></li>
     {{ end }}
